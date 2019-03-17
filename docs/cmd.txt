@@ -1,0 +1,5 @@
+# start clone
+docker run -d -p 80:80 --name jiro -v /$HOME/jiro/html:/usr/share/nginx/html:ro -v /$HOME/jiro/log:/var/log/nginx nginx
+
+# Fetch site
+wget -r -p -U Mozilla http://www.geocities.co.jp/Foodpia-Olive/3433/
